@@ -1,0 +1,121 @@
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #edf2f8;
+}
+
+.conteiner {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "c1 c1 c1 c2 c5"
+    "c3 c4 c4 c4 c5";
+  gap: 0px;
+  max-width: 1000px;
+  max-height: 800px;
+}
+
+.box {
+  min-width: 200px;
+  padding: 13px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: all 0.5s ease-out;
+}
+.box h3 {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.box h4 {
+  margin-top: 0px;
+  font-size: 10px;
+  color: hsla(0, 0%, 100%, 0.746);
+}
+.box:hover {
+  transform: scale(1.09);
+}
+.box .perfil {
+  display: flex;
+  flex-flow: row;
+  flex-flow: row;
+  margin: 10px;
+}
+.box .perfil img {
+  margin: 15px 10px 0px 0px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.box .texto {
+  margin: 10px;
+}
+.box .texto .primeiro {
+  font-weight: 700;
+  color: white;
+}
+.box .texto .segundo {
+  color: hsla(0, 0%, 100%, 0.746);
+  font-size: 13px;
+}
+
+.c1 {
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position-z: top;
+  background-position-x: 250px;
+  background-color: hsl(263, 55%, 52%);
+  grid-area: c1;
+}
+
+.c2 {
+  background-color: hsl(217, 19%, 35%);
+  grid-area: c2;
+}
+.c3 {
+  background-color: #ffffff;
+  grid-area: c3;
+  color: black;
+}
+
+.c3 .name h4 {
+  color: hsla(0, 0%, 19%, 0.591);
+}
+.c3 .name h3 {
+  color: hsla(0, 0%, 19%, 0.591);
+}
+.c3 .texto .primeiro {
+  color: #585b62;
+}
+.c3 .texto .segundo {
+  color: hsla(0, 0%, 19%, 0.591);
+}
+
+.c4 {
+  background-color: hsl(219, 29%, 14%);
+  grid-area: c4;
+}
+.c5 {
+  background-color: #ffffff;
+  grid-area: c5;
+}
+.c5 .name h4 {
+  color: hsla(0, 0%, 19%, 0.591);
+}
+.c5 .name h3 {
+  color: hsla(0, 0%, 19%, 0.591);
+}
+.c5 .texto .primeiro {
+  color: #585b62;
+}
+.c5 .texto .segundo {
+  color: hsla(0, 0%, 19%, 0.591);
+}
